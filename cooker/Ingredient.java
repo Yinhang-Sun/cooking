@@ -3,12 +3,12 @@ package com.laioffer.Cooking.cooker;
 public class Ingredient {
     private String ingredientName;
     private double ingredientAmount;
-    private double ingredientPerUnit;
+    private double pricePerUnit;
 
     public Ingredient(String ingredientName, double ingredientAmount, double ingredientPerUnit) {
         this.ingredientName = ingredientName;
         this.ingredientAmount = ingredientAmount;
-        this.ingredientPerUnit = ingredientPerUnit;
+        this.pricePerUnit = ingredientPerUnit;
     }
 
     public String getIngredientName() {
@@ -27,11 +27,11 @@ public class Ingredient {
         this.ingredientAmount = ingredientAmount;
     }
 
-    public double getIngredientPerUnit() {
-        return ingredientPerUnit;
+    public double getPricePerUnit() {
+        return pricePerUnit;
     }
 
-    public void setIngredientPerUnit(double ingredientPerUnit) {
-        this.ingredientPerUnit = ingredientPerUnit;
+    public void setPricePerUnit(double pricePerUnit) {
+        this.pricePerUnit = pricePerUnit;
     }
 }

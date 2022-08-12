@@ -1,15 +1,15 @@
 package com.laioffer.Cooking.cooker;
 
-public class Food {
+public class Meal {
     private String name;
     private Recipe recipe;
 
-    public Food() {
+    public Meal() {
         this.name = null;
         this.recipe = null;
     }
 
-    public Food(String name, Recipe recipe) {
+    public Meal(String name, Recipe recipe) {
         this.name = name;
         this.recipe = recipe;
     }

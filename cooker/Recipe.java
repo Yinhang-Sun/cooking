@@ -5,11 +5,20 @@ import java.util.List;
 public class Recipe {
     private String name;
     private List<Ingredient> ingredients;
-    private String directions;
+    private List<CookingStep> steps;
 
-    public Recipe(List<Ingredient> ingredients, String directions) {
+    public Recipe(String name, List<Ingredient> ingredients, List<CookingStep> steps) {
+        this.name = name;
         this.ingredients = ingredients;
-        this.directions = directions;
+        this.steps = steps;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Ingredient> getIngredients() {
@@ -20,19 +29,11 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public String getDirections() {
-        return directions;
+    public List<CookingStep> getSteps() {
+        return steps;
     }
 
-    public void setDirections(String directions) {
-        this.directions = directions;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setSteps(List<CookingStep> steps) {
+        this.steps = steps;
     }
 }
